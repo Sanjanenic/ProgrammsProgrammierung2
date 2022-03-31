@@ -8,8 +8,8 @@ public class Bank {
         Account zweite=new Account("Lara", "78000dff", "4579");
         Account dritte=new Account("Iva", "78pppdff", "73098");
 
-    erste.add(120, 0.0);
-    zweite.add(909, 100);
+    erste.add(7000);
+    zweite.add(90);
     dritte.add(1890, 700);
 
 

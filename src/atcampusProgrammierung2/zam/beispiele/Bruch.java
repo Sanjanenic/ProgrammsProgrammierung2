@@ -29,15 +29,22 @@ private int denominator;
     }
 
     public double toDecimal(){
-        return numerator/denominator;
+        return (double)numerator/denominator;
     }
     public void print(){
-        System.out.println(numerator+"/"+denominator);
+        System.out.println(numerator+" / "+denominator);
 
     }
-public double FractionMultiplicate(){
+ public Bruch multiplicate(Bruch b2)
+ {
+        Bruch erg=new Bruch(numerator,denominator);
+        erg.numerator= erg.numerator*b2.numerator;
+        erg.denominator= erg.denominator*b2.denominator;
+
+        return erg;
+ }
 
 }
 
 
-}
+

@@ -4,12 +4,23 @@ public class Bruch {
 
 private int numerator;
 private int denominator;
+private static int wieVileObjekte=0;
 
 
 //Konstruktor
     public Bruch(int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator=denominator;
+   ++wieVileObjekte;
+    }
+
+    public static int getWieVileObjekte() {
+        return wieVileObjekte;
+    }
+
+    @Override
+    public String toString() {
+        return "Bruch:" +numerator+" / "+ denominator;
     }
 
     public int getNumerator() {
@@ -40,8 +51,10 @@ private int denominator;
         Bruch erg=new Bruch(numerator,denominator);
         erg.numerator= erg.numerator*b2.numerator;
         erg.denominator= erg.denominator*b2.denominator;
-
+     ++wieVileObjekte;  //ovo je isto kao i: wievileObjekte= wievieleObjektte+1
         return erg;
+
+
  }
 
 }

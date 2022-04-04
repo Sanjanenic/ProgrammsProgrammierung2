@@ -8,6 +8,9 @@ public class BruchDemo {
         Bruch mult=b1.multiplicate(b2);
         mult.print();
 
+        System.out.println(b1);
+        System.out.println(Bruch.getWieVileObjekte());
+
 
     }
 }

@@ -1,18 +1,38 @@
 package atcampusProgrammierung2.zam.beispiele;
 
 public class Osterhase {
+    private static int heaschenZaehler=1;  //statische variable, es gibt nur einmal
     private int anzahlVersteckteEier;  //atribut und lokal variable haben gleiche namen und mit this. das funktioniert
   private String name;
+  private int heaschenNummer;
+  private HasenReligion personlicherGlaube;
 
-  public Osterhase(String name, int anzahlVersteckteEier){
+
+
+    public Osterhase(String name, int anzahlVersteckteEier, HasenReligion personlicherGlaube){
       this.name=name;
       this.anzahlVersteckteEier=anzahlVersteckteEier;
+      heaschenNummer=heaschenZaehler++;
+      personlicherGlaube=HasenReligion.LANGEOHRENZEUGER;
   }
   public Osterhase(String name){  //das ist zweite Konstruktor
       this.name=name;
       this.anzahlVersteckteEier=0;
+      heaschenNummer=heaschenZaehler++;
+      //jeder Hase soltte eine eigene nummer haben, wegen der Steuer zB
+      personlicherGlaube=HasenReligion.LANGEOHRENZEUGER;                            //svaki novi zec ce dobiti svoj broj pomocu ovog ++
+      //ALTERNATIVE ZUGRIFF ODER VON AUSSER WENN NICHT PRIVAT WÄRE IST:Osterhease.heaschenZahler
   }
+    public int getHeaschenNummer() {
+        return heaschenNummer;
+    }
 
+    @Override  //diese methode solte text zurück geben, einen String  mit name,.. Ovo je za fin ispis na konzoli
+    //methode ruft sich automatisch wenn einen objekt ausgeben wollte sein
+    public String toString() {
+        return name +" versteckte "+ anzahlVersteckteEier + " viele Eier" +" glaubt an: " + personlicherGlaube;
+
+    }
     //    public void aendereahzahlEier(int anzahlVersteckteEier){
 //        if(anzahlVersteckteEier>=0) {
 //            //anzahlVersteckteEier ist parametar

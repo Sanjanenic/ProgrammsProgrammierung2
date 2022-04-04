@@ -7,14 +7,13 @@ public class Osterhase {
   private int heaschenNummer;
   private HasenReligion personlicherGlaube;
 
-
-
     public Osterhase(String name, int anzahlVersteckteEier, HasenReligion personlicherGlaube){
       this.name=name;
       this.anzahlVersteckteEier=anzahlVersteckteEier;
       heaschenNummer=heaschenZaehler++;
-      personlicherGlaube=HasenReligion.LANGEOHRENZEUGER;
+      this.personlicherGlaube=personlicherGlaube;
   }
+
   public Osterhase(String name){  //das ist zweite Konstruktor
       this.name=name;
       this.anzahlVersteckteEier=0;

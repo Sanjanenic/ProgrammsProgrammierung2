@@ -10,7 +10,7 @@ public class DemoEmp {
         Employee e2 = new Employee(2, "Anna",5400.50,"Administration");
         Employee e3 = new Employee(3, "Luca",5000.50,"Buchhaltung");
 
-EmployeeManager mgr= new EmployeeManager();
+EmployeeManager mgr= new EmployeeManager(); //objek napravljen da bi mogla koristiti metode, z sve normalne metode koje nisu static je taako
 
 mgr.addEmployee(e1);
 mgr.addEmployee(e2);

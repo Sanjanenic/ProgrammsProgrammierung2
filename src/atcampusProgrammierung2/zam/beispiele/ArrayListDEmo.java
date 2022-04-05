@@ -10,7 +10,7 @@ public class ArrayListDEmo {
         ArrayList<Osterhase> mauritius=new ArrayList<>();//meine erste collection list
         Osterhase karl=new Osterhase("Karl von Karligen",1000,HasenReligion.EXTRABUNTEOSTEREIER);
         Osterhase carla=new Osterhase("Carla Kolumna", 1100, HasenReligion.ZURHEILIGENKAROTTE);
-        Osterhase uschi = new Osterhase("Uschi mit dem langen Ohren", 7777, HasenReligion.LANGEOHRENZEUGER);  //ovdje trebam popraviti u konzoli je null
+        Osterhase uschi = new Osterhase("Uschi mit dem langen Ohren", 7777, HasenReligion.LANGEOHRENZEUGER);
 
         //fugen hinten elementen hinzu
         mauritius.add(karl);

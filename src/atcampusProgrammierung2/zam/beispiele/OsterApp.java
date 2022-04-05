@@ -1,11 +1,13 @@
 package atcampusProgrammierung2.zam.beispiele;
 
+import java.util.ArrayList;
+
 public class OsterApp {
     public static void main(String[] args) {
         Osterhase dieter= new Osterhase("Dieter", 77,HasenReligion.LANGEOHRENZEUGER);
         Osterhase marla=new Osterhase("Marla");
         dieter.setName("Dieter(formarly known als Hansi)");
-
+        //ArrayList<Osterhase>mauritius =new  ovdje dodati listu zeceva i onda dodati ih u listu, za poproaviti
 //        dieter.setAnzahlVersteckteEier(5);
         System.out.println(dieter.getName());
         System.out.println(dieter.getAnzahlVersteckteEier());

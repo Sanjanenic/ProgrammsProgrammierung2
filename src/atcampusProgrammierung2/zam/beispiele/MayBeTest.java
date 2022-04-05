@@ -7,7 +7,7 @@ public class MayBeTest {
         gehalt.print();
 
         MayBe<Account>mrinKonto=new MayBe<>(new Account("laura", "ATZZZZ", "REIKA"),1);
-       // meinKonto.print();  ovo moram popraviti jer mi account nije sredjen, kad sredim onda ovo odkomentarisati
+       // Account.print();
 
     }
 }

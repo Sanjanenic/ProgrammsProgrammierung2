@@ -20,6 +20,11 @@ mgr.addEmployee(e3);
         System.out.println(mgr.findeByDepartment("Buchhaltung"));
         System.out.println(mgr.findByMaxSalary());
 
+        //vergleichen ob in gleiche department arbeiten
+
+        System.out.println(e1.compareDepartment(e3));
+        System.out.println(e1.compareDepartment(e2));
+
 
 
 

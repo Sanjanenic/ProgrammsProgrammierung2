@@ -1,5 +1,7 @@
 package at.campus02.emp;
 
+import java.util.Objects;
+
 public class Employee {
 
     private int empNumber;
@@ -34,6 +36,16 @@ public class Employee {
         return department;
     }
 
+    //neue methoden soll uberprufen ob 2 mittarbeiter in gleichen departman arbeiten
+    //true zuruckliefern falls ja, folse falls nein
+
+    public boolean compareDepartment(Employee e){
+        if(department.equals(e.department)){
+            return true;
+        }
+            return false;
+    }
+
     public void setSalari(double salari) {
         this.salari = salari;
     }
@@ -41,6 +53,9 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+
+
 
     @Override
     public String toString() {
@@ -50,5 +65,18 @@ public class Employee {
                 ", salari=" + salari +
                 ", department='" + department + '\'' +
                 '}';
+    }
+//ovo smo generisali
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;  //this ist referenz, vergeleiche referenzen, ob objekts zeigen auf gleiche speicher adresse
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return empNumber == employee.empNumber && Objects.equals(department, employee.department);
+    }
+//ova metoda nam je bitna
+    @Override
+    public int hashCode() {
+        return Objects.hash(empNumber, department);
     }
 }

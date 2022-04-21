@@ -1,6 +1,7 @@
 package atcampusProgrammierung2.zam.beispiele;
 
 
+import java.util.HashMap;
 
 public class Bank {
     public static void main(String[] args) {
@@ -29,5 +30,25 @@ erste.deposit(500);
             System.out.println(account[i].getBalance()); //mit komplexe datentype geht es immer so mit methode am ende
         }
 
+        //wir mochter account uber den namen der besitzerinen zugreifen
+        //mapping von Dagobart Duck...Account()
+        //Dagobart Duck ist ein besipiel für enen Schlusselelement
+        //Account ist beispiel für wert
+        //achting: wen so machen wir, kann jedes person nur einen Acount  haben
+
+        HashMap<String, Account>bank=new HashMap<>();
+        bank.put("Hugo", erste);
+        bank.put("Lara", zweite);
+        bank.put("Iva", dritte);
+//gib es einen wert dem schlussel dagbert
+        System.out.println(bank.containsKey("Hugo"));
+        //mochten dem Wert del schlussel lara behalten
+        System.out.println(bank.get("Lara"));
+
+        //einmal durch iterrieren, achtung etwas anderes
+        for(String owner: bank.keySet()){  //hier owner konnte auch andere name haben, hat nichts zu tun mit owner in nachste Zeile
+            System.out.println(owner);
+            System.out.println(bank.get(owner));
+        }
     }
 }

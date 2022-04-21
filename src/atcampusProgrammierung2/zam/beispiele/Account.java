@@ -1,5 +1,7 @@
 package atcampusProgrammierung2.zam.beispiele;
 
+import java.util.Objects;
+
 public class Account {
 
     private String owner;
@@ -43,5 +45,18 @@ public class Account {
                 ", balance=" + balance +
                 ", TotalAccounts=" + AccountCounter +
                 '}';
+    }
+//ovo generisemo:ovo je za poredjenje objekata za kolekcije hash...
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return Objects.equals(bic, account.bic);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bic);
     }
 }

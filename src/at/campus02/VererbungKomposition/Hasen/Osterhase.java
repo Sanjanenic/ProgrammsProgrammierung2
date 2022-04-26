@@ -1,6 +1,7 @@
 package at.campus02.VererbungKomposition.Hasen;
 
 public class Osterhase extends Hase {
+    //u konstriktor spcijlana klucbna rijec super
     public Osterhase(String name) {
         super(name);
     }

@@ -1,10 +1,10 @@
-package at.campus02.VererbungKomposition.Instrumente;
+package AbstractOrcestar.Instrumente;
 
 import java.util.ArrayList;
 
 public class DEMO {
     public static void main(String[] args) {
-         Instrumente i1= new Instrumente(5, "UnknownInstrument");
+         //Instrumente i1= new Instrumente(5, "UnknownInstrument");
          //i1.play(); das unktioniert wil solte
 
         Instrumente t1 = new Trompete(10, "Trompette1");
@@ -13,7 +13,7 @@ public class DEMO {
 
         ArrayList<Instrumente> lista = new ArrayList<Instrumente>();
 
-        lista.add(i1);
+        //lista.add(i1);
         lista.add(t1);
         lista.add(k1);
         lista.add(g1);

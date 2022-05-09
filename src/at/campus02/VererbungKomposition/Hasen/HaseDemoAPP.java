@@ -14,6 +14,7 @@ public class HaseDemoAPP {
         h2.schlafen();
         h2.hoppeln();
 
+
 //probamo up i down cast
         //upcasting
         Hase hase1 = h1;

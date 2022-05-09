@@ -1,6 +1,4 @@
-package at.campus02.VererbungKomposition.Instrumente;
-
-import at.campus02.VererbungKomposition.Hasen.Hase;
+package AbstractOrcestar.Instrumente;
 
 import java.util.ArrayList;
 

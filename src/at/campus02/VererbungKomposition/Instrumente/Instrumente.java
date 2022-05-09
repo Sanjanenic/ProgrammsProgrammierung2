@@ -16,7 +16,7 @@ public class Instrumente {
     public int play(){
 
         System.out.println(name + " wird gespielt ");
-    return lautstarke;
+        return lautstarke;
 
     }
 
